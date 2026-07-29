@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import AppHeader from './components/AppHeader.vue'
-import LeaguesView from './views/LeaguesView.vue'
+import AppHeader from './components/AppHeader.vue';
+import LeaguesView from './views/LeaguesView.vue';
 </script>
 
 <template>

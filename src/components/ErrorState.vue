@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps<{ message?: string }>()
+defineProps<{ message?: string }>();
 
-defineEmits<{ retry: [] }>()
+defineEmits<{ retry: [] }>();
 </script>
 
 <template>

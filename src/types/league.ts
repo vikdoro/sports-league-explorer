@@ -1,10 +1,19 @@
 export interface League {
-  idLeague: string
-  strLeague: string
-  strSport: string
-  strLeagueAlternate: string | null
+  idLeague: string;
+  strLeague: string;
+  strSport: string;
+  strLeagueAlternate: string | null;
 }
 
 export interface AllLeaguesResponse {
-  leagues: League[] | null
+  leagues: League[] | null;
+}
+
+export interface Season {
+  strSeason: string;
+  strBadge: string | null;
+}
+
+export interface AllSeasonsResponse {
+  seasons: Season[] | null;
 }
