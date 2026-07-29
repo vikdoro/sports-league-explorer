@@ -10,6 +10,16 @@
       content="Browse and explore sports leagues from around the world"
     />
 
+    <!-- Preload the primary Inter weight so it is usually ready before
+         first paint, keeping the font-display: swap FOUT window minimal. -->
+    <link
+      rel="preload"
+      href="/fonts/inter-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/icon-512.png" />

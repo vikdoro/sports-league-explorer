@@ -1,7 +1,6 @@
 /* Base layer: reset, type helpers and shared component recipes.
-   Requires tokens.css to be imported first. */
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+   Requires tokens.css to be imported first.
+   Inter is self-hosted from /public/fonts, declared in fonts.css. */
 
 /* Reset */
 *,

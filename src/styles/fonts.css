@@ -1,0 +1,21 @@
+/* Self-hosted Inter (latin subset, weights used by --font-sans).
+   Files live in /public/fonts so their paths are stable and preloadable
+   from index.html. font-display: swap renders text immediately in the
+   fallback font and applies Inter as soon as it loads — a brief FOUT on
+   cold cache is possible, but Inter is guaranteed to arrive. */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin-700-normal.woff2') format('woff2');
+}
