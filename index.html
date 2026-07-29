@@ -10,11 +10,23 @@
       content="Browse and explore sports leagues from around the world"
     />
 
-    <!-- Preload the primary Inter weight so it is usually ready before
-         first paint, keeping the font-display: swap FOUT window minimal. -->
+    <!-- Start the TheSportsDB connection (DNS + TCP + TLS) while the JS
+         bundle downloads, so the first API call skips the handshake. -->
+    <link rel="preconnect" href="https://www.thesportsdb.com" crossorigin />
+
+    <!-- Preload both Inter weights (400 body, 700 headings) so they are
+         usually ready before first paint, keeping the font-display: swap
+         FOUT window minimal. -->
     <link
       rel="preload"
       href="/fonts/inter-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/inter-latin-700-normal.woff2"
       as="font"
       type="font/woff2"
       crossorigin
