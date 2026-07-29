@@ -1,7 +1,7 @@
 // Public TheSportsDB defaults so the app runs without any .env file.
 // Override via VITE_SPORTSDB_* env vars for a different endpoint or key.
 const DEFAULT_BASE_URL = 'https://www.thesportsdb.com/api/v1/json';
-const DEFAULT_API_KEY = '123';
+const DEFAULT_API_KEY = '3';
 
 const baseUrl = import.meta.env.VITE_SPORTSDB_BASE_URL || DEFAULT_BASE_URL;
 const apiKey = import.meta.env.VITE_SPORTSDB_API_KEY || DEFAULT_API_KEY;

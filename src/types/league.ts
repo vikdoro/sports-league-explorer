@@ -2,7 +2,8 @@ export interface League {
   idLeague: string;
   strLeague: string;
   strSport: string;
-  strLeagueAlternate: string | null;
+  // Absent from the free-key response, null-able elsewhere.
+  strLeagueAlternate?: string | null;
 }
 
 export interface AllLeaguesResponse {

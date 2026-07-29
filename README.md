@@ -14,8 +14,8 @@ npm run dev
 Then open the URL Vite prints (default http://localhost:5173).
 
 The app runs out of the box with no configuration — it falls back to
-TheSportsDB's public endpoint and free test key (`123`). Note that the
-free key returns only 5 leagues, all Soccer; a private key unlocks the
+TheSportsDB's public endpoint and free test key (`3`). Note that the
+free key returns only 10 leagues, all Soccer; a private key unlocks the
 full ~1,500-league dataset, which gives the search and the sport filter
 a realistic amount of data to work with.
 
@@ -27,7 +27,7 @@ below in `.env.local` (gitignored, see `.env.example`):
 | Variable | Default | Description |
 | --- | --- | --- |
 | `VITE_SPORTSDB_BASE_URL` | `https://www.thesportsdb.com/api/v1/json` | API base URL (no trailing slash) |
-| `VITE_SPORTSDB_API_KEY` | `123` | API key (`123` is the free public test key) |
+| `VITE_SPORTSDB_API_KEY` | `3` | API key (`3` is the free public test key) |
 
 > **⚠️ Private keys are for local use only.** Never commit one or deploy
 > a build made with one — Vite inlines `VITE_*` vars into the bundle.
